@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Carrito</title>
+    <link rel="stylesheet" href="../css/estilos.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="menu"><a href="../index.html">Volver</a></nav>
+    </header>
+    <main>
+      <section id="listaCarrito"></section>
+      <form id="formulario">
+        <input name="nombre" id="nombre" placeholder="Nombre" required />
+        <input
+          name="correo"
+          id="correo"
+          placeholder="Correo"
+          type="email"
+          required
+        />
+        <input name="tel" id="tel" placeholder="Teléfono" required />
+        <select id="pago" required>
+          <option value="">Pago</option>
+          <option>Tarjeta</option>
+          <option>MercadoPago</option>
+        </select>
+        <button type="submit" class="boton principal">Finalizar</button>
+      </form>
+    </main>
+    <script type="module" src="../js/carrito.js"></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "nombre": "Auriculares",
+    "categoria": "Audio",
+    "precio": 5000,
+    "imagen": "https://picsum.photos/seed/1/600/400",
+    "descripcion": "Auriculares con micrófono"
+  },
+  {
+    "id": 2,
+    "nombre": "Teclado",
+    "categoria": "Periféricos",
+    "precio": 9000,
+    "imagen": "https://picsum.photos/seed/2/600/400",
+    "descripcion": "Teclado mecánico"
+  },
+  {
+    "id": 3,
+    "nombre": "Mouse",
+    "categoria": "Periféricos",
+    "precio": 3000,
+    "imagen": "https://picsum.photos/seed/3/600/400",
+    "descripcion": "Mouse óptico"
+  }
+]

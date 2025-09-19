@@ -1,3 +1,4 @@
+const botonModo = document.getElementById("modo")
 function traerLocal(c) {
   try {
     return JSON.parse(localStorage.getItem(c)) || null;
@@ -7,6 +8,17 @@ function traerLocal(c) {
 }
 function guardarLocal(c, v) {
   localStorage.setItem(c, JSON.stringify(v));
+}
+function cargarTema() {
+  const t = localStorage.getItem("tema");
+  if (t) document.documentElement.setAttribute("data-tema", t);
+}
+function cambiarTema() {
+  const actual = document.documentElement.getAttribute("data-tema");
+  const nuevo = actual === "oscuro" ? "" : "oscuro";
+  if (nuevo) document.documentElement.setAttribute("data-tema", nuevo);
+  else document.documentElement.removeAttribute("data-tema");
+  localStorage.setItem("tema", nuevo);
 }
 async function mostrar() {
   const params = new URLSearchParams(location.search);
@@ -29,4 +41,6 @@ async function mostrar() {
     alert("Agregado");
   });
 }
+cargarTema();
+botonModo.addEventListener("click", cambiarTema)
 mostrar();

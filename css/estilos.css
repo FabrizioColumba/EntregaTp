@@ -8,9 +8,9 @@
   color: #111;
 }
 [data-tema="oscuro"] {
-  --fondo: #111;
-  --texto: #eee;
-  --caja: #1a1a1a;
+  --fondo: #302f2f;
+  --texto: black;
+  --caja: #505050;
 }
 * {
   box-sizing: border-box;

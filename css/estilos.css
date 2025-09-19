@@ -124,6 +124,11 @@ a{
 #descripcionProducto{
   padding: 5rem;;
 }
+#botoncompra{
+  flex: 1;
+  text-align: center;
+
+}
 
 
 

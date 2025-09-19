@@ -7,15 +7,38 @@
     <link rel="stylesheet" href="../css/estilos.css" />
     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
 </head>
-<script src="../js/compra.js"></script>
 <body>
     <header>
-        <nav class="menu"><a href="../index.html">Volver</a>
+        <nav class="menu"><a href="carrito.html">Volver</a>
       <div class="logo1">
         <a href="../index.html"><h2>Nuestra tienda <i class="fi fi-sr-store-alt"></i> </h2></a>
       </div>
       <button id="modo">Modo</button>
       </nav>
     </header>
+     <main>
+    <form id="formCompra">
+      <h2>Finalizar compra</h2>
+
+      <label for="nombre">Nombre y Apellido</label>
+      <input type="text" id="nombre" placeholder="Ej: Juan Pérez">
+      <p class="error" id="errorNombre"></p>
+
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" placeholder="Ej: correo@mail.com">
+      <p class="error" id="errorEmail"></p>
+
+      <label for="direccion">Dirección</label>
+      <input type="text" id="direccion" placeholder="Ej: Calle 123, Ciudad">
+      <p class="error" id="errorDireccion"></p>
+
+      <label for="tarjeta">Número de tarjeta</label>
+      <input type="text" id="tarjeta" placeholder="16 dígitos">
+      <p class="error" id="errorTarjeta"></p>
+
+      <button type="submit">Confirmar compra</button>
+    </form>
+  </main>
 </body>
+<script src="../js/compra.js"></script>
 </html>

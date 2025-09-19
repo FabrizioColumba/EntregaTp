@@ -35,6 +35,16 @@ body {
 .logo {
   font-weight: 700;
 }
+.logo1{
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  color: var(--texto);
+}
+.menu.logo1 a{
+  text-decoration: none;
+}
+
 #buscador {
   flex: 1;
   padding: 0.5rem;
@@ -47,7 +57,12 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
   padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+ .tarjeta:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+} 
 .tarjeta {
   background: var(--caja);
   border-radius: 8px;
@@ -84,3 +99,31 @@ footer {
   padding: 1rem;
   background-color: #498f73
 }
+#listaCarrito {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  gap: 1rem;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#formulario{
+  flex: 1;
+  text-align: center;
+}
+#detalle{
+  border-radius: 50;
+  margin: 5rem;
+}
+a{
+  text-decoration: none;
+  color: var(--texto);
+}
+#descripcionProducto{
+  padding: 5rem;;
+}
+
+
+
+

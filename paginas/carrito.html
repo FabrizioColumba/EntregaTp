@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Carrito</title>
     <link rel="stylesheet" href="../css/estilos.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
   </head>
   <body>
     <header>
-      <nav class="menu"><a href="../index.html">Volver</a></nav>
+      <nav class="menu"><a href="../index.html">Volver</a>
+      <div class="logo1">
+        <a href="../index.html"><h2>Nuestra tienda <i class="fi fi-sr-store-alt"></i> </h2></a>
+      </div>
+      <button id="modo">Modo</button>
+      </nav>
     </header>
     <main>
       <section id="listaCarrito"></section>
+      <div id="totalCarrito"></div>
       <form id="formulario">
         <input name="nombre" id="nombre" placeholder="Nombre" required />
         <input
@@ -32,4 +39,7 @@
     </main>
     <script type="module" src="../js/carrito.js"></script>
   </body>
+  <footer>
+     <p>Proyecto Programación </p>
+  </footer>
 </html>

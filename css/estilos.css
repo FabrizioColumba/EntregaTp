@@ -1,8 +1,11 @@
 :root {
   --fondo: #f6f6f6;
   --texto: #111;
-  --caja: #fff;
+  --caja: #93c2ac;
   --color: #2196f3;
+}
+.carrito{
+  color: #111;
 }
 [data-tema="oscuro"] {
   --fondo: #111;
@@ -27,7 +30,7 @@ body {
   gap: 1rem;
   align-items: center;
   padding: 1rem;
-  background: #ddd;
+  background: #deede4
 }
 .logo {
   font-weight: 700;
@@ -36,7 +39,8 @@ body {
   flex: 1;
   padding: 0.5rem;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #bedccc
+
 }
 .rejilla {
   display: grid;
@@ -78,4 +82,5 @@ footer {
   margin-top: auto;
   text-align: center;
   padding: 1rem;
+  background-color: #498f73
 }

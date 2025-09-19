@@ -22,5 +22,38 @@
     "precio": 3000,
     "imagen": "https://picsum.photos/seed/3/600/400",
     "descripcion": "Mouse óptico"
+  },
+  {
+    "id": 4,
+    "nombre": "Monitor",
+    "categoria": "Periféricos",
+    "precio": 10000,
+    "imagen": "https://picsum.photos/seed/3/600/400",
+    "descripcion": "Monitor"
+  },
+  { 
+   "id": 5,
+    "nombre": "Sillas",
+    "categoria": "Accesorios",
+    "precio": 9000,
+    "imagen": "https://picsum.photos/seed/3/600/400",
+    "descripcion": "Sillas ergonomicas"
+  },
+  { 
+    "id": 6,
+    "nombre": "Camaras",
+    "categoria": "Perifericos",
+    "precio": 13000,
+    "imagen": "https://picsum.photos/seed/3/600/400",
+    "descripcion": "WebCam"
+  },
+  { 
+   "id": 7,
+    "nombre": "MousePad",
+    "categoria": "Accesorios",
+    "precio": 2000,
+    "imagen": "https://picsum.photos/seed/3/600/400",
+    "descripcion": "Alfombras"
   }
 ]
+   

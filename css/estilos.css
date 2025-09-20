@@ -1,14 +1,21 @@
 :root {
   --fondo: #f6f6f6;
   --texto: #111;
-  --caja: #fff;
+  --caja: #93c2ac;
   --color: #2196f3;
 }
-[data-tema="oscuro"] {
-  --fondo: #111;
-  --texto: #eee;
-  --caja: #1a1a1a;
+.carrito{
+  color: #111;
 }
+[data-tema="oscuro"] {
+  --fondo: #302f2f;
+  --texto: #f1f1f1;
+  --caja: #505050;
+}
+[data-tema="oscuro"] .menu {
+  background-color: #222;
+}  
+
 * {
   box-sizing: border-box;
   font-family: Arial, sans-serif;
@@ -21,29 +28,46 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  transition: background 0.3s, color 0.3s;
 }
 .menu {
   display: flex;
   gap: 1rem;
   align-items: center;
   padding: 1rem;
-  background: #ddd;
+  background: #deede4
 }
 .logo {
   font-weight: 700;
 }
+.logo1{
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  color: var(--texto);
+}
+.menu.logo1 a{
+  text-decoration: none;
+}
+
 #buscador {
   flex: 1;
   padding: 0.5rem;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #bedccc
+
 }
 .rejilla {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
   padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+ .tarjeta:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+} 
 .tarjeta {
   background: var(--caja);
   border-radius: 8px;
@@ -78,4 +102,62 @@ footer {
   margin-top: auto;
   text-align: center;
   padding: 1rem;
+  background-color: #498f73
 }
+#listaCarrito {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  gap: 1rem;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#formulario{
+  flex: 1;
+  text-align: center;
+}
+#detalle{
+  border-radius: 50;
+  margin: 5rem;
+}
+a{
+  text-decoration: none;
+  color: var(--texto);
+}
+#descripcionProducto{
+  padding: 5rem;;
+}
+#botoncompra{
+  flex: 1;
+  text-align: center;
+}
+.confirmarCompra{
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #2196f3;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+#formCompra{
+    max-width: 500px;
+  margin: 3rem auto;
+  background: var(--caja);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: background 0.3s, color 0.3s;
+
+}
+
+
+
+
+
+
+

@@ -3,6 +3,7 @@
   --texto: #111;
   --caja: #93c2ac;
   --color: #2196f3;
+  --color-hover: #0b7dda;
 }
 .carrito{
   color: #111;
@@ -150,6 +151,31 @@ a{
   transition: background 0.3s, color 0.3s;
 }
 
+/* --------------------------------------------------------------------- */
+
+#buscador {
+  transition: border-color 0.3s ease; 
+}
+#buscador:focus {
+  outline: none;
+  border-color: var(--color); 
+}
+.tarjeta {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.boton {
+  transition: background-color 0.3s ease; 
+}
+.boton.principal:hover {
+  background: var(--color-hover); 
+}
+a {
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: var(--color);
+}
+
 @media (max-width: 600px) {
   .menu {
     flex-direction: column;
@@ -179,10 +205,3 @@ a{
     margin: 1rem;
   }
 }
-
-
-
-
-
-
-
